@@ -3,14 +3,12 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta name="description" content="Explore the rich culture, history, and attractions of Spain">
-    <title>Discover Spain & Its Culture</title>
+    <title>Famous Monuments of Spain</title>
     <link rel="stylesheet" href="styles.css">
-    <!-- Linking Google Fonts for modern typography -->
-    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600&display=swap" rel="stylesheet">
+    <script src="script.js" defer></script>
 </head>
-
-<style> /* Basic reset */
+<style>
+/* General Reset */
 * {
     margin: 0;
     padding: 0;
@@ -18,280 +16,138 @@
 }
 
 body {
-    font-family: 'Poppins', sans-serif;
+    font-family: 'Arial', sans-serif;
+    line-height: 1.6;
     color: #333;
+    background-color: #f7f7f7;
 }
 
-/* Navigation styling */
-.navbar {
-    background: rgba(0, 0, 0, 0.7);
-    position: fixed;
-    width: 100%;
-    padding: 1em 0;
-    z-index: 1000;
+/* Header */
+header {
+    background: url('https://www.enjoytravel.com/en/travel-news/famous-for/most-famous-monuments-spain') no-repeat center/cover;
+    color: white;
+    text-align: center;
+    padding: 5rem 2rem;
 }
 
-.navbar .container {
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
+header h1 {
+    font-size: 2.5rem;
+    margin-bottom: 1rem;
 }
 
-.navbar ul {
-    display: flex;
+header p {
+    font-size: 1.2rem;
+}
+
+/* Navigation */
+nav {
+    background: #333;
+    color: white;
+    padding: 1rem 0;
+}
+
+nav ul {
     list-style: none;
-}
-
-.navbar ul li {
-    margin-left: 20px;
-}
-
-.navbar ul li a {
-    color: white;
-    text-decoration: none;
-    font-weight: 600;
-}
-
-.navbar ul li a:hover {
-    color: #f0c330;
-}
-
-/* Hero Section */
-.hero {
-    height: 100vh;
-    background-image: url('https://source.unsplash.com/1600x900/?spain');
-    background-size: cover;
-    background-position: center;
-    position: relative;
     display: flex;
-    align-items: center;
     justify-content: center;
-    text-align: center;
+    gap: 1rem;
 }
 
-.hero-content {
-    color: white;
-    max-width: 600px;
-}
-
-.hero-content h2 {
-    font-size: 3.5em;
-    margin-bottom: 20px;
-}
-
-.hero-content p {
-    font-size: 1.2em;
-    margin-bottom: 30px;
-}
-
-.cta-button {
-    background: #f0c330;
-    color: #333;
-    padding: 10px 20px;
-    text-transform: uppercase;
+nav a {
     text-decoration: none;
-    font-weight: 600;
-}
-
-.cta-button:hover {
-    background: #333;
     color: white;
+    padding: 0.5rem 1rem;
 }
 
-/* Section Styling */
-.section {
-    padding: 4em 0;
+nav a:hover {
+    background: #555;
+    border-radius: 5px;
 }
 
-.section h2 {
-    text-align: center;
-    font-size: 2.5em;
-    margin-bottom: 1em;
+/* Main Content */
+main {
+    padding: 2rem;
 }
 
-.section p {
-    text-align: center;
-    max-width: 700px;
-    margin: 0 auto;
-    font-size: 1.2em;
-}
-
-.section.dark {
-    background: #333;
-    color: white;
-}
-
-/* Content Box */
-.content-box {
-    display: flex;
-    align-items: center;
-    justify-content: space-between;
-    margin-top: 30px;
-}
-
-.content-box img {
-    width: 45%;
+main section {
+    margin-bottom: 2rem;
+    padding: 1rem;
+    background: white;
     border-radius: 10px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
 }
 
-.content-text {
-    width: 50%;
-    font-size: 1.1em;
-    line-height: 1.8;
-}
-
-.content-text p {
-    margin-bottom: 1em;
-}
-
-/* Grid Styling */
-.grid {
-    display: flex;
-    justify-content: space-between;
-    margin-top: 30px;
-}
-
-.grid-item {
-    width: 30%;
-    text-align: center;
-}
-
-.grid-item img {
-    width: 100%;
+main section img {
+    max-width: 100%;
     border-radius: 10px;
+    margin-bottom: 1rem;
 }
 
-.grid-item h3 {
-    margin: 15px 0 10px;
+main section h2 {
+    margin-bottom: 1rem;
+    color: #555;
 }
 
-.events-grid {
-    display: flex;
-    justify-content: space-between;
-}
-
-.event-item {
-    width: 30%;
-    background: #f4f4f4;
-    padding: 20px;
-    border-radius: 10px;
-    text-align: center;
-}
-
-.event-item h3 {
-    margin-bottom: 10px;
-}
-
-/* Footer Styling */
+/* Footer */
 footer {
-    background: #222;
+    background: #333;
     color: white;
-   
-
-
-
+    text-align: center;
+    padding: 1rem 0;
+}
 </style>
 <body>
-
-
-    <!-- Navigation Bar -->
     <header>
-        <nav class="navbar">
-            <div class="container">
-                <h1 class="logo"><a href="#">SpainCulture</a></h1>
-                <ul class="nav-links">
-                    <li><a href="#home">Home</a></li>
-                    <li><a href="#culture">Culture</a></li>
-                    <li><a href="#attractions">Attractions</a></li>
-                    <li><a href="#events">Events</a></li>
-                    <li><a href="#history">History</a></li>
-                </ul>
-            </div>
-        </nav>
+        <div class="container">
+            <h1>Famous Monuments of Spain</h1>
+            <p>Explore the architectural marvels and historic sites of Spain!</p>
+        </div>
     </header>
-
-    <!-- Hero Section -->
-    <section id="home" class="hero">
-        <div class="hero-content">
-            <h2>Welcome to Spain</h2>
-            <p>Discover the soul of Spain – a country of vibrant culture, historic landmarks, and breathtaking landscapes.</p>
-            <a href="#culture" class="cta-button">Explore Culture</a>
-        </div>
-    </section>
-
-    <!-- Culture Section -->
-    <section id="culture" class="section">
-        <div class="container">
-            <h2>Spanish Culture</h2>
-            <div class="content-box">
-                <img src="https://source.unsplash.com/800x600/?flamenco" alt="Flamenco Dance">
-                <div class="content-text">
-                    <p>Spain’s culture is a vivid mix of traditions and modern life. From the passionate Flamenco dance to festivals like La Tomatina, Spain’s cultural diversity is reflected in its art, architecture, and lifestyle.</p>
-                </div>
-            </div>
-        </div>
-    </section>
-
-    <!-- Attractions Section -->
-    <section id="attractions" class="section dark">
-        <div class="container">
-            <h2>Top Attractions in Spain</h2>
-            <div class="grid">
-                <div class="grid-item">
-                    <img src="https://source.unsplash.com/400x300/?sagrada-familia" alt="Sagrada Familia">
-                    <h3>Sagrada Familia</h3>
-                    <p>The stunning basilica in Barcelona designed by Gaudi, a UNESCO World Heritage Site.</p>
-                </div>
-                <div class="grid-item">
-                    <img src="https://source.unsplash.com/400x300/?alhambra" alt="Alhambra">
-                    <h3>Alhambra</h3>
-                    <p>An exquisite palace and fortress complex located in Granada, a symbol of Moorish architecture.</p>
-                </div>
-                <div class="grid-item">
-                    <img src="https://source.unsplash.com/400x300/?plaza-mayor" alt="Plaza Mayor">
-                    <h3>Plaza Mayor</h3>
-                    <p>A grand square in the heart of Madrid, surrounded by historical buildings and cafes.</p>
-                </div>
-            </div>
-        </div>
-    </section>
-
-    <!-- Events Section -->
-    <section id="events" class="section">
-        <div class="container">
-            <h2>Upcoming Cultural Events</h2>
-            <div class="events-grid">
-                <div class="event-item">
-                    <h3>La Tomatina</h3>
-                    <p>Date: August 2024</p>
-                    <p>Location: Buñol, Valencia</p>
-                </div>
-                <div class="event-item">
-                    <h3>Flamenco Festival</h3>
-                    <p>Date: April 2024</p>
-                    <p>Location: Seville</p>
-                </div>
-                <div class="event-item">
-                    <h3>San Fermín</h3>
-                    <p>Date: July 2024</p>
-                    <p>Location: Pamplona</p>
-                </div>
-            </div>
-        </div>
-    </section>
-
-    <!-- History Section -->
-    <section id="history" class="section dark">
-        <div class="container">
-            <h2>A Rich Historical Legacy</h2>
-            <p>Spain’s history is filled with the legacies of the Roman Empire, Moorish rule, and the Age of Exploration. Discover centuries-old landmarks like the Alhambra, the Cathedral of Seville, and more.</p>
-        </div>
-    </section>
-
-    <!-- Footer -->
+    <nav>
+        <ul>
+            <li><a href="#alhambra">Alhambra</a></li>
+            <li><a href="#sagrada-familia">Sagrada Familia</a></li>
+            <li><a href="#royal-palace">Royal Palace of Madrid</a></li>
+            <li><a href="#park-guell">Park Güell</a></li>
+            <li><a href="#cathedral-seville">Seville Cathedral</a></li>
+            <li><a href="#cathedral-barcelona">Cathedral of Barcelona</a></li>
+        </ul>
+    </nav>
+    <main>
+        <section id="alhambra">
+            <h2>Alhambra</h2>
+            <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/e/e6/Alhambra%2C_Granada%2C_Spain_-_Sept_2009.jpg/1024px-Alhambra%2C_Granada%2C_Spain_-_Sept_2009.jpg" alt="Alhambra">
+            <p>The Alhambra is a magnificent palace and fortress complex in Granada, renowned for its Islamic architecture and stunning gardens.</p>
+        </section>
+        <section id="sagrada-familia">
+            <h2>Sagrada Familia</h2>
+            <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/8/87/Sagrada_Familia_%28Barcelona%29.jpg/1024px-Sagrada_Familia_%28Barcelona%29.jpg" alt="Sagrada Familia">
+            <p>Designed by Antoni Gaudí, the Sagrada Familia in Barcelona is a breathtaking example of modernist architecture.</p>
+        </section>
+        <section id="royal-palace">
+            <h2>Royal Palace of Madrid</h2>
+            <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/3/3e/Royal_Palace_of_Madrid.jpg/1024px-Royal_Palace_of_Madrid.jpg" alt="Royal Palace of Madrid">
+            <p>The Royal Palace of Madrid is the official residence of the Spanish Royal Family, showcasing opulent interiors and historic artifacts.</p>
+        </section>
+        <section id="park-guell">
+            <h2>Park Güell</h2>
+            <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/d/d3/Park_Güell_08.jpg/1024px-Park_Güell_08.jpg" alt="Park Güell">
+            <p>Park Güell, another masterpiece by Gaudí, features colorful mosaics, whimsical architecture, and panoramic views of Barcelona.</p>
+        </section>
+        <section id="cathedral-seville">
+            <h2>Seville Cathedral</h2>
+            <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/0/0d/Catedral_de_Sevilla.jpg/1024px-Catedral_de_Sevilla.jpg" alt="Seville Cathedral">
+            <p>One of the largest Gothic cathedrals in the world, the Seville Cathedral is home to the tomb of Christopher Columbus.</p>
+        </section>
+        <section id="cathedral-barcelona">
+            <h2>Cathedral of Barcelona</h2>
+            <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/2/21/Cathedral_Barcelona.jpg/1024px-Cathedral_Barcelona.jpg" alt="Cathedral of Barcelona">
+            <p>The Cathedral of Barcelona is a striking example of Catalan Gothic architecture, with its intricate façade and peaceful cloister.</p>
+        </section>
+    </main>
     <footer>
         <div class="container">
-            <p>&copy; 2024 SpainCulture. All Rights Reserved.</p>
+            <p>&copy; 2024 Famous Monuments of Spain. All rights reserved.</p>
         </div>
     </footer>
 </body>
