@@ -6,148 +6,166 @@
     <title>Famous Monuments of Spain</title>
     <link rel="stylesheet" href="styles.css">
 </head>
-<style>
-/* General Reset */
-* {
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
-}
 
-body {
-    font-family: 'Arial', sans-serif;
-    line-height: 1.6;
-    color: #333;
-    background-color: #f7f7f7;
-}
-
-/* Header */
-header {
-    background: url('https://www.enjoytravel.com/en/travel-news/famous-for/most-famous-monuments-spain') no-repeat center/cover;
-    color: white;
-    text-align: center;
-    padding: 5rem 2rem;
-}
-
-header h1 {
-    font-size: 2.5rem;
-    margin-bottom: 1rem;
-}
-
-header p {
-    font-size: 1.2rem;
-}
-
-/* Navigation */
-nav {
-    background: #333;
-    color: white;
-    padding: 1rem 0;
-}
-
-nav ul {
-    list-style: none;
-    display: flex;
-    justify-content: center;
-    gap: 1rem;
-}
-
-nav a {
-    text-decoration: none;
-    color: white;
-    padding: 0.5rem 1rem;
-}
-
-nav a:hover {
-    background: #555;
-    border-radius: 5px;
-}
-
-/* Main Content */
-main {
-    padding: 2rem;
-}
-
-main section {
-    margin-bottom: 2rem;
-    padding: 1rem;
-    background: white;
-    border-radius: 10px;
-    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
-}
-
-main section img {
-    max-width: 100%;
-    border-radius: 10px;
-    margin-bottom: 1rem;
-}
-
-main section h2 {
-    margin-bottom: 1rem;
-    color: #555;
-}
-
-/* Footer */
-footer {
-    background: #333;
-    color: white;
-    text-align: center;
-    padding: 1rem 0;
-}
-</style>
 <body>
-    <header>
-        <div class="container">
-            <h1>Famous Monuments of Spain</h1>
-            <p>Explore the architectural marvels and historic sites of Spain!</p>
+    <section class="container">
+        <div >
+            <h1>Monumentos famosos de España</h1>
+            <p>¡Explora las maravillas arquitectónicas y los sitios históricos de España!</p>
         </div>
-    </header>
+    </section>
     <nav>
         <ul>
             <li><a href="#alhambra">Alhambra</a></li>
             <li><a href="#sagrada-familia">Sagrada Familia</a></li>
-            <li><a href="#royal-palace">Royal Palace of Madrid</a></li>
-            <li><a href="#park-guell">Park Güell</a></li>
-            <li><a href="#cathedral-seville">Seville Cathedral</a></li>
-            <li><a href="#cathedral-barcelona">Cathedral of Barcelona</a></li>
+            <li><a href="#royal-palace">Palacio Real de Madrid</a></li>
+            <li><a href="#plaza">Plaza Mayor</a></li>
+            <li><a href="#alcazar">Alcázar de Segovia</a></li>
+            <li><a href="#giralda">La Giralda</a></li>
+            <li><a href="#majorca">Catedral de Mallorca</a></li>
+            <li><a href="#debod">Templo de Debod</a></li>
+            <li><a href="#seville">Catedral de Sevilla</a></li>
+            <li><a href="#bugos">Catedral de Burgos</a></li>
         </ul>
     </nav>
     <main>
         <section id="alhambra">
             <h2>Alhambra</h2>
-            <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/e/e6/Alhambra%2C_Granada%2C_Spain_-_Sept_2009.jpg/1024px-Alhambra%2C_Granada%2C_Spain_-_Sept_2009.jpg" alt="Alhambra">
-            <p>The Alhambra is a magnificent palace and fortress complex in Granada, renowned for its Islamic architecture and stunning gardens.</p>
+            <div class="para_al">
+            <p>Ubicada en la cima de una colina en Granada, la Alhambra es un impresionante complejo de palacios y
+            fortalezas que se erige como un testimonio del arte y la arquitectura morisca. Construido originalmente
+            en el siglo XIII, muestra un intrincado trabajo de azulejos, exuberantes jardines e impresionantes 
+            patios. Entre las características más notables se encuentran el Palacio de los Leones con su emblemática
+            fuente de leones y los jardines del Generalife que ofrecen una belleza serena. La Alhambra es Patrimonio
+            de la Humanidad por la UNESCO, admirada en todo el mundo por su importancia histórica y su exquisita 
+            belleza.
+
+            ¡Disfruta de tu exploración de uno de los monumentos más magníficos de España!</p>
+            </div>
+            <img src="alhambra.jpg" alt="Alhambra">
         </section>
         <section id="sagrada-familia">
-            <h2>Sagrada Familia</h2>
-            <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/8/87/Sagrada_Familia_%28Barcelona%29.jpg/1024px-Sagrada_Familia_%28Barcelona%29.jpg" alt="Sagrada Familia">
-            <p>Designed by Antoni Gaudí, the Sagrada Familia in Barcelona is a breathtaking example of modernist architecture.</p>
+            <h2 style="margin-left: 58%; font-size: 2rem;">Sagrada Familia</h2>
+            <p>La Sagrada Familia, ubicada en Barcelona, es una basílica icónica diseñada por el legendario 
+                arquitecto Antoni Gaudí. La construcción comenzó en 1882 y sigue sin terminarse. Este lugar, 
+                declarado Patrimonio de la Humanidad por la UNESCO, muestra la mezcla única de Gaudí de estilos 
+                gótico y art nouveau, con sus impresionantes fachadas, intrincadas esculturas e imponentes torres.
+                 El interior de la basílica es igualmente impresionante, con vibrantes vidrieras que crean un 
+                 fascinante juego de luces. La Sagrada Familia es un testimonio del genio visionario de Gaudí y un 
+                 hito de visita obligada en España.
+
+                ¡Una verdadera maravilla del ingenio arquitectónico!</p>
+            <img src='sagrada.avif' alt="Sagrada Familia">
         </section>
         <section id="royal-palace">
-            <h2>Royal Palace of Madrid</h2>
-            <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/3/3e/Royal_Palace_of_Madrid.jpg/1024px-Royal_Palace_of_Madrid.jpg" alt="Royal Palace of Madrid">
-            <p>The Royal Palace of Madrid is the official residence of the Spanish Royal Family, showcasing opulent interiors and historic artifacts.</p>
+            <div>
+            <h2 >Palacio Real de Madrid</h2>            
+            <p>El Palacio Real de Madrid, conocido como Palacio Real, es la residencia oficial de la familia real 
+                española, aunque ahora se utiliza principalmente para ceremonias de estado. Situado en el corazón de
+                 Madrid, este gran palacio cuenta con más de 3.000 habitaciones llenas de tesoros artísticos, como 
+                 pinturas, tapices y muebles antiguos. Su magnífica fachada, sus extensos jardines y sus lujosos 
+                 interiores lo convierten en un impresionante ejemplo de arquitectura barroca. Abierto al público, 
+                 el palacio ofrece una visión de la historia real y el opulento patrimonio de España.Los visitantes 
+                 pueden maravillarse con el Salón del Trono, el Salón de los Espejos y la Armería Real, cada uno de 
+                 los cuales se hace eco de la grandeza de la realeza española.
+
+                ¡Un hito majestuoso que encarna el esplendor de España!</p>
+                    </div>
         </section>
-        <section id="park-guell">
-            <h2>Park Güell</h2>
-            <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/d/d3/Park_Güell_08.jpg/1024px-Park_Güell_08.jpg" alt="Park Güell">
-            <p>Park Güell, another masterpiece by Gaudí, features colorful mosaics, whimsical architecture, and panoramic views of Barcelona.</p>
+        <section id="plaza">
+            <h2>Plaza Mayor</h2>
+            <p>La Plaza Mayor, situada en el vibrante centro de Madrid, es una gran plaza porticada llena de 
+                historia. Construido originalmente en el siglo XVII, ha servido como un bullicioso centro para
+                mercados, festivales, corridas de toros e incluso ceremonias reales. Rodeada de elegantes edificios 
+                de tres pisos con frescos distintivos, la estatua central de la plaza del rey Felipe III se suma a su
+                encanto real. La Plaza Mayor sigue siendo un hito cultural vital, que invita tanto a los lugareños 
+                como a los visitantes a sumergirse en el rico patrimonio de España.
+
+                ¡Un lugar cautivador donde convergen la historia y la vida moderna!</p>
+            <img src="plaza mayor.jpg" alt="Park Güell">
         </section>
-        <section id="cathedral-seville">
-            <h2>Seville Cathedral</h2>
-            <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/0/0d/Catedral_de_Sevilla.jpg/1024px-Catedral_de_Sevilla.jpg" alt="Seville Cathedral">
-            <p>One of the largest Gothic cathedrals in the world, the Seville Cathedral is home to the tomb of Christopher Columbus.</p>
+        <section id="alcazar">
+            <h2>Alcázar de Segovia</h2>
+            <p>El Alcázar de Segovia es un impresionante castillo encaramado en un peñasco rocoso en Segovia, España.
+               Con su apariencia de cuento de hadas, esta fortaleza ha servido como palacio real, academia militar y
+               prisión estatal desde su construcción en el siglo XII. Famoso por su distintiva forma de barco y sus 
+               impresionantes torres, el Alcázar ofrece unas vistas impresionantes y una rica historia. Su intrincado
+               interior, con grandes salones y hermosos murales, refleja su importancia como sede del poder. El 
+               Alcázar de Segovia sigue siendo un símbolo del patrimonio medieval y el esplendor arquitectónico de 
+               España.
+
+                ¡Una fortaleza encantadora que realmente captura la imaginación!</p>
+            <img src="alcazar de segovia.jpeg" alt="Seville Cathedral">
         </section>
-        <section id="cathedral-barcelona">
-            <h2>Cathedral of Barcelona</h2>
-            <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/2/21/Cathedral_Barcelona.jpg/1024px-Cathedral_Barcelona.jpg" alt="Cathedral of Barcelona">
-            <p>The Cathedral of Barcelona is a striking example of Catalan Gothic architecture, with its intricate façade and peaceful cloister.</p>
+        <section id="giralda">
+            <div>
+            <h2>La Giralda</h2>
+            <p>La Giralda es el campanario de la Catedral de Sevilla en Sevilla, España. Originalmente construido 
+                como alminar de la Mezquita Mayor de Sevilla durante la dinastía almohade, fue convertido 
+                posteriormente en campanario tras la reconquista cristiana1. La torre presenta una mezcla de 
+                arquitectura islámica y renacentista, con un campanario de estilo renacentista añadido en el siglo 
+                XVI. La Giralda es Patrimonio de la Humanidad por la UNESCO y sigue siendo uno de los símbolos más 
+                importantes de Sevilla, ya que ofrece unas vistas impresionantes de la ciudad desde su cima1.
+
+                ¡Una verdadera obra maestra de la historia de la arquitectura!</p>
+            <img src="la giralda.jpg" alt="La Giralda Tower">
+        </section>
+        <section id="majorca">
+            <h2>Catedral de Mallorca</h2>
+            <p>La Catedral de Mallorca, también conocida como La Seu, es una impresionante catedral gótica situada 
+                en Palma de Mallorca, España. Construido entre los siglos XIII y XVI, se alza majestuoso en el paseo
+                 marítimo, ofreciendo impresionantes vistas del mar Mediterráneo. Su inmenso rosetón, uno de los más
+                  grandes del mundo, y la intrincada arquitectura gótica lo convierten en una obra maestra visual. 
+                  El sereno interior de la catedral, adornado con hermosas capillas y tesoros artísticos, refleja su
+                   antigua importancia religiosa y su brillantez arquitectónica.
+
+                ¡Un impresionante testimonio de la arquitectura gótica y la belleza espiritual!</p>
+            <img src="mallorca cathedral.jpg" alt="Catedral de Mallorca">
+        </section>
+        <section id="debod">
+            <h2>Templo de Debod</h2>
+            <p>El Templo de Debod, situado en Madrid, es un antiguo templo egipcio que data del siglo II a.C. 
+                Donado a España por Egipto en 1968 como muestra de gratitud por la ayuda de España para salvar los 
+                monumentos de Nubia, el templo fue cuidadosamente reconstruido en el Parque del Oeste. Este templo 
+                bien conservado, dedicado a los dioses Amón e Isis, ofrece a los visitantes una visión única de la 
+                arquitectura y la historia del antiguo Egipto en el corazón de Madrid. Al atardecer, el templo se 
+                ilumina bellamente, creando un ambiente mágico que cautiva a los visitantes.
+
+                ¡Una joya serena e histórica en la bulliciosa ciudad!</p>
+            <img src="temple of debod.jpg" alt="Templo de Debod">
+        </section>
+        <section id="seville">
+            <h2>Catedral de Seville</h2>
+            <p>La Catedral de Sevilla, también conocida como Catedral de Sevilla, es la catedral gótica más grande 
+                del mundo y Patrimonio de la Humanidad por la UNESCO. Construida a principios del siglo XVI, se 
+                levanta sobre una antigua mezquita, conservando el minarete que ahora se conoce como La Giralda. La 
+                catedral es famosa por su vasto interior, sus impresionantes capillas y su rica colección de arte. 
+                También alberga la tumba de Cristóbal Colón. Su majestuosa arquitectura gótica y su importancia 
+                histórica lo convierten en un monumento de visita obligada en España.
+
+                ¡Un impresionante símbolo del patrimonio y la grandeza de Sevilla!</p>
+            <img src="catedral de seville.jpeg" alt="Catedral de Seville">
+        </section>
+        <section id="bugos">
+            <div>
+            <h2>Catedral de Burgos</h2>
+            <p>La Catedral de Burgos, ubicada en Burgos, España, es un impresionante ejemplo de arquitectura gótica 
+                y Patrimonio de la Humanidad de la UNESCO. Su construcción comenzó en 1221 y continuó a lo largo de 
+                varios siglos, dando como resultado una rica mezcla de estilos. La catedral es famosa por sus 
+                majestuosas agujas, sus intrincadas fachadas y sus hermosas vidrieras. En su interior, alberga una 
+                impresionante colección de arte religioso, como la ornamentada Escalera Dorada y la tumba del Cid, 
+                el legendario héroe de España. La Catedral de Burgos es un testimonio del patrimonio artístico y 
+                cultural de España.
+
+                ¡Una verdadera joya arquitectónica que encanta a todos los que la visitan!</p>
+            <img src="burgos.jpg" alt="Catedral de Burgos">
+        </div>
         </section>
     </main>
     <footer>
-        <div class="container">
+        <section class="foot">
             <p>&copy; 2024 Famous Monuments of Spain. All rights reserved.</p>
-        </div>
+        </section>
     </footer>
 </body>
 </html>
