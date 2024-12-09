@@ -311,6 +311,15 @@ main section {
     margin-left: 77%;
     margin-top: -18%;
 }
+
+#photo_gallery{
+    background-color: aliceblue;
+}
+#photo_gallery img{
+    margin-left: 5%;
+    height: 350px;
+}
+
 main section img {
     max-width: 100%;
     border-radius: 10px;
